@@ -32,7 +32,7 @@
         spaces += ' ';
       }
 
-      // add text before the cursor + the new spaces +
+      // add text before the cursor + the new spaces + rest of text
       $textarea.val(val.substring(0, start) + spaces + val.substring(start));
 
       $textarea.keyup(function(e) {
