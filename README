@@ -1,0 +1,1 @@
+Occasionally, I have to do simple code/markup editing in html textarea's for work... don't ask :-) This simple jQuery plugin adds smart indentation (spaces only) to a textarea to keep things clean and help maintain sanity.
