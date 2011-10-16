@@ -1,0 +1,12 @@
+{
+  "name": "SimpleIndent",
+  "version": "1.0",
+  "description": "Apply simple indentation to an html textarea",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "simple_indent.html"
+  },
+  "permissions": [
+    "tabs", "http://*/*"
+  ]
+}

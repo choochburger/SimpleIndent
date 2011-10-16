@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#enable').click(function(e) {
+        e.preventDefault();
+        console.log('clicked');
+        chrome.tabs.executeScript(null, {file: "jquery.min.js"});
+        chrome.tabs.executeScript(null, {file: "simple_indent.js"});
+        chrome.tabs.executeScript(null, {file: "add_indent.js"});
+        window.close();
+      });
+     });
+  </script>
+</head>
+
+<body style="width: 300px;">
+  <p>
+    <a href="#" id="enable">Click here</a> and then click a textarea on the page to enable SimpleIndent on it.
+  </p>
+</body>
+
+</html>
